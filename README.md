@@ -20,6 +20,10 @@ UI 设计师、UX 设计师、产品设计师、设计团队负责人
 
 总体判断、P0-P3 问题清单、逐区块建议、文案优化、交付前检查表
 
+## 在线演示
+
+https://2077zpt-source.github.io/pt-zcool-ui-design-review/
+
 ## 文件
 
 - `SKILL.md`: skill 主体文件
