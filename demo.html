@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UI 设计稿评审助手 | Pt Designer Skill</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #1f2933;
+      background: #f7f6f2;
+      line-height: 1.65;
+    }
+    .hero {
+      min-height: 76vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+      gap: 48px;
+      align-items: center;
+      padding: 56px clamp(24px, 6vw, 88px) 42px;
+      background: linear-gradient(115deg, #f7f6f2 0%, #fffdf7 54%, #eef4ff 100%);
+      border-bottom: 1px solid rgba(31,41,51,.12);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #42526e;
+      background: #ffffff;
+      border: 1px solid rgba(31,41,51,.12);
+      padding: 7px 12px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 76px);
+      line-height: 1.04;
+      letter-spacing: 0;
+      color: #111827;
+    }
+    .lead {
+      max-width: 680px;
+      margin: 24px 0 0;
+      font-size: clamp(18px, 2vw, 24px);
+      color: #3f4a5a;
+    }
+    .hero img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 1px solid rgba(31,41,51,.14);
+      box-shadow: 0 24px 80px rgba(42,63,94,.14);
+      background: #fff;
+    }
+    .actions { margin-top: 34px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #fff;
+      background: #111827;
+    }
+    .button.secondary { color: #111827; background: #fff; border: 1px solid rgba(31,41,51,.16); }
+    main { padding: 54px clamp(24px, 6vw, 88px) 72px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    section {
+      background: #fff;
+      border: 1px solid rgba(31,41,51,.12);
+      border-radius: 8px;
+      padding: 26px;
+    }
+    section.wide { grid-column: 1 / -1; }
+    h2 { margin: 0 0 12px; font-size: 24px; line-height: 1.25; color: #111827; }
+    p { margin: 0; }
+    .muted { color: #52606d; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+    .tag { padding: 5px 10px; border-radius: 999px; background: #eef2f7; color: #344054; font-size: 13px; }
+    ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    li { display: flex; gap: 12px; align-items: flex-start; }
+    li span {
+      flex: 0 0 28px;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #111827;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .codebox {
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #f5f7fa;
+      border: 1px solid rgba(31,41,51,.1);
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    footer {
+      max-width: 1180px;
+      margin: 28px auto 0;
+      color: #667085;
+      font-size: 14px;
+    }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Pt Designer Skill · UI/UX 设计</div>
+      <h1>UI 设计稿评审助手</h1>
+      <p class="lead">从信息层级、组件一致性、交互状态和视觉细节角度审查 UI 设计稿。</p>
+      <div class="actions">
+        <a class="button" href="SKILL.md">查看 SKILL.md</a>
+        <a class="button secondary" href="https://github.com/2077zpt-source/pt-zcool-ui-design-review">GitHub 仓库</a>
+      </div>
+    </div>
+    <img src="assets/cover.png" alt="UI 设计稿评审助手 cover" />
+  </header>
+  <main>
+    <div class="grid">
+      <section>
+        <h2>这是做什么的</h2>
+        <p>帮助 UI/UX 设计师在交付前发现页面目标、信息层级、布局对齐、组件一致性、状态设计、文案和可访问性问题，并输出按优先级排列的修改清单。</p>
+      </section>
+      <section>
+        <h2>适合谁</h2>
+        <p>UI 设计师、UX 设计师、产品设计师、设计团队负责人</p>
+        <div class="tags"><span class="tag">UI评审</span><span class="tag">UX</span><span class="tag">设计走查</span><span class="tag">界面优化</span><span class="tag">交付检查</span></div>
+      </section>
+      <section class="wide">
+        <h2>典型场景</h2>
+        <p>当你准备交付 UI 设计稿，想检查信息层级、组件一致性、交互状态和视觉细节时使用。</p>
+      </section>
+      <section>
+        <h2>输入什么</h2>
+        <div class="codebox">产品类型、页面目标、目标用户、设备尺寸、当前设计阶段、重点关注、已知限制、截图或页面说明</div>
+      </section>
+      <section>
+        <h2>输出什么</h2>
+        <div class="codebox">总体判断、P0-P3 问题清单、逐区块建议、文案优化、交付前检查表</div>
+      </section>
+      <section>
+        <h2>使用流程</h2>
+        <ol><li><span>1</span>输入页面目标</li><li><span>2</span>检查信息层级</li><li><span>3</span>按优先级列问题</li><li><span>4</span>生成交付前检查表</li></ol>
+      </section>
+      <section>
+        <h2>示例</h2>
+        <p class="muted">输入“SaaS 数据看板”，输出 P0-P3 问题清单、逐区块建议和验收标准。</p>
+      </section>
+    </div>
+    <footer>Author: Pt · License: MIT · Original skill for ZCOOL designer workflows</footer>
+  </main>
+</body>
+</html>
